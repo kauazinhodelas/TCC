@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title> UniSus </title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <img src="assets/Logo2.png" alt="header" />
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="./index.html"> </a></li>
+        <li>
+          <button class="btn">
+            <span><i class="ri-login-box-line"></i></span>
+            Login
+          </button>
+        </li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" id="login">
+          <span><i class="ri-login-box-line"></i></span>
+          Login
+        </button>
+      </div>
+      <div class="nav__btns">
+        <button class="btn" id="register">
+          <span><i class="ri-login-box-line"></i></span>
+          Registrar-se
+        </button>
+      </div>
+    </nav>
+    <script>
+      document.getElementById("login").addEventListener("click", function () {
+        window.location.href = "login.php"; 
+      });
+      document.getElementById("register").addEventListener("click", function () {
+        window.location.href = "register.php"; 
+      });
+    </script>
+
+    <div class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/3.webp" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>Escolha soluções que trazem <span>mudanças reais.</span></h1>
+        <p class="section__description">
+          Nossa missão é atender suas necessidades com transporte de alta qualidade
+        </p>
+      </div>
+    </div>
+  </header>
+  
+  <section class="section__container service__container" id="service">
+    <p class="section__subheader">O QUE FAZEMOS</p>
+    <h2 class="section__header">Seu parceiro favorito para o melhor agendamento</h2>
+    <div class="service__grid">
+      <div class="service__card">
+        <img src="assets/calendar-icon-symbol-sign-vector.png" alt="serviço" />
+        <h4>Fácil de agendar</h4>
+        <p>Basta seguir alguns passos para agendar o seu Transporte</p>
+      </div>
+      <div class="service__card">
+        <img src="assets/correto.png" alt="serviço" />
+        <h4>Confiança</h4>
+        <p>Transporte sempre chega a tempo, agora ainda mais eficiente</p>
+      </div>
+      <div class="service__card">
+        <img src="assets/Qualidade.png" alt="serviço" />
+        <h4>Melhor Qualidade</h4>
+        <p>Não é apenas rápido, é eficiente. Nossa prioridade é garantir a qualidade em cada viagem.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section__container client__container" id="client">
+    <div class="client__image">
+      <img src="assets/Design_sem_nome-Photoroom.png" alt="cliente" />
+    </div>
+    <div class="client__content">
+      <p class="section__subheader">O que falam sobre nós</p>
+      <h2 class="section__header">O que nossos pacientes dizem sobre nós</h2>
+      <p class="section__description">
+        Agendar minhas consultas por este site tem sido uma experiência prática e eficiente. O processo é rápido e o atendimento sempre atencioso,
+         o que me traz muita tranquilidade. Desde o agendamento até a consulta, tudo é feito com cuidado e pontualidade.
+      </p>
+      <div class="client__details">
+        <img src="assets/eu.png" alt="cliente" />
+        <div>
+          <h4>Kauã Gabryel</h4>
+          <p class="testimonial__content">
+            O atendimento foi excelente! A equipe é muito atenciosa e o transporte sempre pontual.
+          </p>
+        </div>
+        
+      </div>
+      <div class="client__rating">
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span><i class="ri-star-fill"></i></span>
+        <span>5.0</span>
+      </div>
+    </div>  
+  </section>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<footer style="background: #333; color: #fff; text-align: center; padding: 20px 10px; margin-top: 20px;">
+  <p>&copy; <?= date('Y'); ?> UniSus - Todos os direitos reservados.</p>
+  <p>Desenvolvido com ❤️ pela equipe UniSus.</p>
+  <!-- Botão do Instagram -->
+  <a 
+    href="https://www.instagram.com/unisus__/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    style="
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #E1306C;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    "
+    onmouseover="this.style.backgroundColor='#C2185B';"
+    onmouseout="this.style.backgroundColor='#E1306C';"
+  >
+    <i class="ri-instagram-line" style="margin-right: 5px;"></i> Siga no Instagram
+  </a>
+</footer>
+</body>
+</html>
